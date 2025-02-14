@@ -77,7 +77,7 @@ bottom:0+'px',
 
           <Button
               icon="heroicons-outline:search"
-              className="btn-primary dark:bg-slate-600 text-[12px] "
+              className="bg-[#067BBF] btn-primary dark:bg-slate-600 text-[12px] "
               onClick={() => {
                 navigate("/formulaireannonce");
               }}
@@ -89,8 +89,8 @@ bottom:0+'px',
               grid-cols-4 gap-2 
               lg:grid-cols-2 lg:gap-4 w-100`} >
             <Button
-              className={` text-[12px] btn btn-sm ${
-                filterType1 === 1 ? "btn-primary" : "btn-outline-primary"
+              className={`text-[#067BBF] border-[#067BBF] text-[12px] btn btn-sm ${
+                filterType1 === 1 ? "" : "btn-outline-primary"
               }`}
               onClick={() => {handleFilter(filterType, 1,posts),
                 setFilterType1(1)
@@ -99,8 +99,8 @@ bottom:0+'px',
               En attente
             </Button>
             <Button
-              className={`btn text-[12px] btn-sm ${
-                filterType1 === 0 ? "btn-primary" : "btn-outline-primary"
+              className={`text-[#067BBF] border-[#067BBF] btn text-[12px] btn-sm ${
+                filterType1 === 0 ? "" : "btn-outline-primary"
               }`}
               onClick={() => {handleFilter(filterType, 0,posts),
                 setFilterType1(0)
@@ -109,8 +109,8 @@ bottom:0+'px',
               Refusée
             </Button>
             <Button
-              className={`btn text-[12px] btn-sm ${
-                filterType1 === 2 ? "btn-primary" : "btn-outline-primary"
+              className={`text-[#067BBF] border-[#067BBF] btn text-[12px] btn-sm ${
+                filterType1 === 2 ? "" : "btn-outline-primary"
               }`}
               onClick={() => {handleFilter(filterType, 2,posts),
                 setFilterType1(2)
@@ -119,7 +119,7 @@ bottom:0+'px',
               acceptée
             </Button>
             <Button
-              className="btn text-[12px] btn-sm btn-outline-primary"
+              className="text-[#067BBF] border-[#067BBF] btn text-[12px] btn-sm btn-outline-primary"
               onClick={() =>{ handleFilter(filterType, null,posts),
                 setFilterType1(null)
               }}
@@ -130,8 +130,8 @@ bottom:0+'px',
             <div className={`grid  grid-cols-4 gap-2 
               lg:grid-cols-2 lg:gap-4 w-100 `} >
             <Button
-              className={`btn btn-sm text-[12px] ${
-                filterType === "Formation" ? "btn-primary" : "btn-outline-primary"
+              className={`text-[#067BBF] border-[#067BBF] btn btn-sm text-[12px] ${
+                filterType === "Formation" ? "" : "btn-outline-primary"
               }`}
               onClick={() => {handleFilter("Formation", filterType1,posts),
                 setFilterType("Formation")
@@ -140,8 +140,8 @@ bottom:0+'px',
               Formation
             </Button>
             <Button
-              className={`btn btn-sm text-[12px] ${
-                filterType === "Conseil" ? "btn-primary" : "btn-outline-primary"
+              className={`text-[#067BBF] border-[#067BBF] btn btn-sm text-[12px] ${
+                filterType === "Conseil" ? "" : "btn-outline-primary"
               }`}
               onClick={() => {handleFilter("Conseil", filterType1,posts),
                 setFilterType("Conseil")
@@ -150,8 +150,8 @@ bottom:0+'px',
               Conseil
             </Button>
             <Button
-              className={`btn btn-sm text-[12px] ${
-                filterType === "Recrutement" ? "btn-primary" : "btn-outline-primary"
+              className={`text-[#067BBF] border-[#067BBF] btn btn-sm text-[12px] ${
+                filterType === "Recrutement" ? "" : "btn-outline-primary"
               }`}
               onClick={() =>{ handleFilter("Recrutement", filterType1,posts),
                 setFilterType('Recrutement')
@@ -160,7 +160,7 @@ bottom:0+'px',
               Recrutement
             </Button>
             <Button
-              className="btn btn-sm text-[12px] btn-outline-primary"
+              className="text-[#067BBF] border-[#067BBF] btn btn-sm text-[12px] btn-outline-primary"
               onClick={() => {handleFilter(null, filterType1,posts),
                 setFilterType(null)
               }} // Réinitialiser le filtre

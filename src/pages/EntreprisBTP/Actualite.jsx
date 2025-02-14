@@ -62,9 +62,9 @@ bottom:0+'px',
 						// Style supplémentaire pour écrans plus grands
 					>
 						<Button
-							className={` block-btn space-x-3  ${
+							className={`text-[#067BBF] border-[#067BBF]  block-btn space-x-3  ${
 								filterType === "Formation"
-									? "btn-primary"
+									? ""
 									: "btn-outline-primary"
 							}`}
 							onClick={() => {
@@ -76,8 +76,8 @@ bottom:0+'px',
 						</Button>
 
 						<Button
-							className={` block-btn space-x-3  ${
-								filterType === "Conseil" ? "btn-primary" : "btn-outline-primary"
+							className={`text-[#067BBF] border-[#067BBF]  block-btn space-x-3  ${
+								filterType === "Conseil" ? "" : "btn-outline-primary"
 							}`}
 							onClick={() => {handleFilter("Conseil",posts)
                 setFilterType("Conseil")}
@@ -87,9 +87,9 @@ bottom:0+'px',
 						</Button>
 
 						<Button
-							className={` block-btn space-x-3  ${
+							className={`text-[#067BBF] border-[#067BBF]  block-btn space-x-3  ${
 								filterType === "Recrutement"
-									? "btn-primary"
+									? ""
 									: "btn-outline-primary"
 							}`}
 							onClick={() =>{ handleFilter("Recrutement",posts),
@@ -100,7 +100,7 @@ bottom:0+'px',
 						</Button>
 
 						<Button
-							className=" block-btn space-x-3 btn-outline-primary"
+							className="text-[#067BBF] border-[#067BBF]  block-btn space-x-3 btn-outline-primary"
 							onClick={() => {handleFilter(null,posts),
                 setFilterType(null)
               }} // Réinitialiser le filtre

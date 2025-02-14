@@ -21,7 +21,7 @@ const Footer = ({ className = "custom-class" }) => {
 						className="text-center ltr:md:text-start rtl:md:text-right"
 						style={{ fontSize: "11px" }}
 					>
-						COPYRIGHT &copy; 2024 TechServices
+						COPYRIGHT &copy; 2025 TechServices
 					</div>
 					<div className="ltr:md:text-right rtl:md:text-end text-center text-sm"></div>
 				</div>

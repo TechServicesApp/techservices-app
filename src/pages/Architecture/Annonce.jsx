@@ -66,10 +66,10 @@ const Annonce = () => {
       </div>
       <div className="pt-4 px-6 flex">
         <div className=" pr-6">
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 " >
             <Button
               icon="heroicons-outline:search"
-              className="btn-dark dark:bg-slate-600"
+              className="bg-[#068BBF] btn-dark dark:bg-slate-600 "
               onClick={() => {
                 navigate("/formulaireannoncearchi");
               }}
