@@ -7,7 +7,7 @@ import LogoWhite from "@/assets/images/logo/logo-white.svg";
 import Logo from "@/assets/images/logo/logobleu.png";
 import Illustration from "@/assets/images/logo/257.png";
 
-const login = () => {
+const Login = () => {
   const [isDark] = useDarkMode();
   return (
     <div className="loginwrapper">
@@ -89,4 +89,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;

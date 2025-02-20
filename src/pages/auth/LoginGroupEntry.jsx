@@ -72,7 +72,7 @@ const LoginGroupEntry = () => {
               Bienvenue sur TechServices
             </h4>
             <div className="text-slate-500 dark:text-slate-400 mb-4">
-              Veuillez choisir l'option
+              Veuillez choisir une option
             </div>
             <LoginFormEntry />
           </div>
